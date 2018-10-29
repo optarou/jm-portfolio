@@ -1,0 +1,9 @@
+<template>
+  <div>
+    <h2>Contact</h2>
+    <dl>
+      <dt>Twitter</dt>
+      <dd>@optaroufe</dd>
+    </dl>
+  </div>
+</template>
