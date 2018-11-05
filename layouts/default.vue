@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-logo/>
+    <cat-face/>
     <Title/>
     <div class="main">
       <transition-group name="fade" tag="div">
@@ -16,12 +16,12 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-import Title from '~/components/Title.vue'
-import Nav from '~/components/Nav.vue'
+import CatFace from '@/components/CatFace.vue'
+import Title from '@/components/Title.vue'
+import Nav from '@/components/Nav.vue'
 export default {
   components: {
-    AppLogo,
+    CatFace,
     Title,
     Nav
   },
@@ -39,11 +39,8 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Unica+One');
-
-$mainColor: #ecf4f3;
-$subColor: #76dbd1;
-$sub2Color: #57a99a;
-$sub3Color: #555151;
+@import '@/assets/style/main.scss';
+@import '@/assets/style/global.scss';
 
 .fade-enter-active {
   animation: fade-in .2s;
@@ -61,7 +58,6 @@ $sub3Color: #555151;
     opacity: 1;
   }
 }
-
 
 .slide-enter-active {
   animation: slide-in .4s;
@@ -84,41 +80,6 @@ $sub3Color: #555151;
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-
-html {
-  font-family: 'Unica One', 'Sawarabi Gothic', sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-  background-color: $mainColor;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-h2 {
-  color: $sub2Color;
 }
 
 .main {

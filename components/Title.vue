@@ -23,10 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$mainColor: #ecf4f3;
-$subColor: #76dbd1;
-$sub2Color: #57a99a;
-$sub3Color: #555151;
+@import '@/assets/style/global.scss';
 
 h1 {
   position: fixed;
