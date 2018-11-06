@@ -11,7 +11,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Unica+One' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Josefin+Sans' }
     ],
   },
   /*
