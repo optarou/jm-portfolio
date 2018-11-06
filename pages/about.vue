@@ -45,8 +45,9 @@
 <script>
 var profiles = [
   { title: 'Name', detail: 'Junta Muramatsu' },
-  { title: 'Birthday', detail: '1993/1/24' },
-  { title: 'Job', detail: 'Frontend Engineer' }
+  // { title: 'Birthday', detail: '1993/1/24' },
+  { title: 'Job', detail: 'Frontend Engineer' },
+  { title: 'Location', detail: 'Tokyo' }
 ]
 var skills = [
   { level: 90, title: 'HTML/HTML5',
