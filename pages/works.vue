@@ -29,11 +29,11 @@ export default {
         //   date: '2018/11'
         // },
         {
-          title: 'This page',
+          title: 'J.M.Portfolio',
           detail: 'ポートフォリオサイト',
           tools: ['Vue.js', 'Nuxt.js'],
           url: '/',
-          date: '2018/10'
+          date: '2018/11'
         },
         // {
         //   title: 'Resister Calendar',

@@ -44,7 +44,7 @@
 
 <script>
 var profiles = [
-  { title: 'Name', detail: 'Junta Muramatsu - 村松 純太' },
+  { title: 'Name', detail: 'Junta Muramatsu' },
   { title: 'Birthday', detail: '1993/1/24' },
   { title: 'Job', detail: 'Frontend Engineer' }
 ]
