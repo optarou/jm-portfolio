@@ -38,7 +38,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Gothic|Unica+One');
 @import '@/assets/style/main.scss';
 @import '@/assets/style/global.scss';
 
