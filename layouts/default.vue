@@ -83,18 +83,18 @@ export default {
 
 .main {
   position: fixed;
-  top: 0;
+  top: 10vh;
   right: 0;
   bottom: 0;
   left: 0;
   width: 90vw;
-  height: 80vh;
   margin: auto;
 }
 
 .contentsWrap {
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   height: 75vh;
   margin-top: 2.5vh;
   padding: 2.5vw;
