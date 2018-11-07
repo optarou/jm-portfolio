@@ -16,7 +16,7 @@
           <dl>
             <dt>{{ item.title }}</dt>
             <dd :data-level="item.level"><span :style="levelStyle(item.level)"></span></dd>
-            <dd v-show="isActive_skill" class="detail">{{ item.detail }}</dd>
+            <dd v-show="isActive_skill" class="detail" v-html="item.detail">{{ item.detail }}></dd>
           </dl>
         </li>
       </ul>
@@ -27,7 +27,7 @@
         <li v-for="item in careers" :key="item.title">
           <dl>
             <dt><span>{{ item.start }}</span> ~ <span>{{ item.end }}</span> {{ item.title }}</dt>
-            <dd v-show="isActive_career" class="detail">{{ item.detail }}</dd>
+            <dd v-show="isActive_career" class="detail" v-html="item.detail"></dd>
           </dl>
         </li>
       </ul>
@@ -67,34 +67,34 @@ var skills = [
   { level: 80, title: 'jQuery',
   },
   { level: 40, title: 'Vue.js',
-    detail: 'プライベートで勉強中'
+    detail: `プライベートで勉強中`
   },
   { level: 30, title: 'Nuxt.js',
-    detail: '同上'
+    detail: `同上`
   },
   { level: 15, title: 'React',
-    detail: 'チュートリアルレベル 実務で既存コードを編集'
+    detail: `チュートリアルレベル 実務で既存コードを編集`
   },
   { level: 8, title: 'Angular',
-    detail: 'チュートリアルレベル'
+    detail: `チュートリアルレベル`
   },
   { level: 30, title: 'Three.js',
-    detail: ''
+    detail: ``
   },
   { level: 70, title: 'Youtube Iframe API',
-    detail: ''
+    detail: ``
   },
   { level: 60, title: 'Web performance',
-    detail: ''
+    detail: ``
   },
   { level: 70, title: 'Visual Studio Code',
-    detail: '<- Atom <- Sublime3'
+    detail: `\<- Atom \<- Sublime3`
   },
   { level: 8, title: 'AWS',
-    detail: 'S3で静的サイトを公開'
+    detail: `S3で静的サイトを公開`
   },
   { level: 5, title: 'Python',
-    detail: '退屈なことはPythonにやらせよう（O\'Reilly）読書中'
+    detail: `<a href="https://www.oreilly.co.jp/books/9784873117782/" target="_blank">退屈なことはPythonにやらせよう（O\'Reilly）</a>読書中`
   },
 ]
 var careers = [
@@ -102,8 +102,7 @@ var careers = [
     start: '2016/11',
     end: '',
     title: 'SES',
-    detail: `詳細`
-    // detail: `大規模飲食系BtoBサービスのHP作成サービスのエンハンス業務を現在まで行なっています。`
+    detail: `大規模飲食系BtoBサービスを展開している企業に常駐。<br/>飲食店向けホームページ作成サービスのフロントエンドを担当。業務内容はサービスのエンハンス・リファクタリング。<br/>担当制作例: 予約管理カレンダー・YouTube動画を組み込み可能なカルーセル・汎用モーダルウィンドウ・複数静的ページ管理画面<br/>特筆事項: 機能制作のほかに、<a href="https://www.oreilly.co.jp/books/9784873115658/" target="_blank">リーダブルコード</a>を参考にして数千行リファクタリングを行った経験。`
   },
   {
     start: '2016/5',
@@ -157,6 +156,15 @@ export default {
 
 <style lang="scss" scoped>
 @import '@/assets/style/global.scss';
+
+dd {
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
 
 .profiles {
   margin-top: .5em;
