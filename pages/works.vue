@@ -2,7 +2,7 @@
   <div>
     <h2>Works</h2>
     <ul class="works">
-      <li v-for="item in works" :key="item.title">
+      <li v-for="item in works" :key="item.title" ontouchstart="">
         <a :href="item.url" target="_blank">
           <dl>
             <dt><h3>{{ item.title }}</h3></dt>
