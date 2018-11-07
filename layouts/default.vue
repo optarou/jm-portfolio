@@ -66,17 +66,17 @@ export default {
 }
 @keyframes slide-in {
   0% {
-    transform: translateX(100%);
+    transform: translateY(100%);
     opacity: 0;
   }
   50% {
-    transform: translateX(-2%);
+    transform: translateY(-2%);
   }
   75% {
-    transform: translateX(0.5%);
+    transform: translateY(0.5%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -95,7 +95,7 @@ export default {
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  height: 75vh;
+  height: 65vh;
   margin-top: 2.5vh;
   padding: 2.5vw;
   background-color: rgba(255, 255, 255, .6);
