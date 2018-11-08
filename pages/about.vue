@@ -84,11 +84,17 @@ var skills = [
   { level: 70, title: 'Youtube Iframe API',
     detail: ``
   },
-  { level: 60, title: 'Web performance',
+  { level: 65, title: 'Web performance',
     detail: ``
   },
   { level: 70, title: 'Visual Studio Code',
     detail: `Atom, SublimeText3`
+  },
+  { level: 60, title: 'Photoshop',
+    detail: ``
+  },
+  { level: 66, title: '色彩',
+    detail: `色彩検定2級を保持`
   },
   { level: 8, title: 'AWS',
     detail: `S3で静的サイトを公開`
@@ -133,7 +139,7 @@ var careers = [
     start: '2011/4',
     end: '2015/3',
     title: 'University of Aizu',
-    detail: `コンピュータ理工学部卒。学部3年次にJavaScriptに興味を持ち、ドットインストールで独学する。4年次にWebGL(Three.js)を用いた大学構内ストリートビューを作成。デザインに興味があり色彩検定2級を取得。絵を描く趣味のおかげでPhotoShopの操作を覚える。フロントエンドエンジニアを志し、Web制作の基礎を作る思いでマークアップエンジニアとして内定をもらう。`
+    detail: `コンピュータ理工学部卒。学部3年次にJavaScriptに興味を持ち、ドットインストールで独学する。4年次にWebGL(Three.js)を用いた大学構内ストリートビューを作成。デザインに興味があり色彩検定2級を取得。絵を描く趣味のおかげでPhotoshopの操作を覚える。フロントエンドエンジニアを志し、Web制作の基礎を作る思いでマークアップエンジニアとして内定をもらう。`
   },
 ];
 
