@@ -205,6 +205,7 @@ export default {
 .skills,
 .careers {
   margin-top: .5em;
+  line-height: 1.5;
   h3 {
     span {
       cursor: pointer;
