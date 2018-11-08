@@ -119,7 +119,7 @@ var careers = [
   {
     start: '2016/1',
     end: '2016/5',
-    title: 'In preparation',
+    title: 'Absence from work',
     detail: `休職。JavaScriptを勉強するためMacBookProと本を購入。<br/>参考にしていた本:
 <a href="https://www.oreilly.co.jp/books/9784873115733/" target="_blank">JavaScript第6版</a>・
 <a href="https://www.oreilly.co.jp/books/9784873113913/" target="_blank">JavaScript: The Good Parts</a>・
